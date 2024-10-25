@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro De Pedidos</title>
+    <link rel="stylesheet" href="../static/tabla.css" >
+    <link rel="icon" href="../static/images/pizza-italiana.png" type="image/png">
+</head>
+<body>
+    <header id="comienzo">
+        <a href="#" class="logo">
+            <img src="../static/images/icono.png" alt="imagen de pizza">
+            <h2 class="name">Pizzeria 
+                Orégano</h2>
+        </a>
+        <nav>
+            <a href="/">Principal</a>
+        </nav>
+    </header>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>N° de orden</th> 
+                <th>Dni</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Celular</th>
+                <th>Tipo de pizza</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tabla in tablas %}
+            <tr>
+                <td>{{ tabla[0] }}</td>
+                <td>{{ tabla[1] }}</td>
+                <td>{{ tabla[2] }}</td>
+                <td>{{ tabla[3] }}</td>
+                <td>{{ tabla[4] }}</td>
+                <td>{{ tabla[5] }}</td>
+                <td>{{ tabla[6] }}</td>
+                <td>
+                    <div class="col text-center">
+                        <a href="/pedidos">
+                            <button 
+                            class="button"
+                        >
+                            Actualizar pedido
+                        </button>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <footer class="footer-a">
+        <section>
+            <a class="end-pag" href="#comienzo">Ir al comienzo</a>
+            <a class="end-pag" href="">Developers</a>
+        </section>
+        <p>Copyright 2024</p>
+    </footer>
+</body>
+</html>

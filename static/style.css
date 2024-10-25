@@ -1,0 +1,79 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom,#333,#000);
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(3, 2, 2);
+    padding-right: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(5, 155, 85);
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 45px;
+    padding-right: 10px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+nav a:hover{
+    color: rgb(245, 245, 245)
+}
+
+.img-description{
+    width: 800px;
+    height: 600px;
+    margin-left: 255px;
+}
+
+.title-secondary{
+    color: #e6d6d6;
+    text-align: center;
+    font-weight: 2000;
+}
+
+.paragraph{
+    color: #e6d6d6;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer{
+    background-color:  rgb(5, 155, 85);
+    padding: 20px;
+    color: rgb(3, 2, 2);
+    font-weight: 600;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer section{
+    float: right;
+}
+
+.end-pag:hover{
+    color: rgb(245, 245, 245)
+} 

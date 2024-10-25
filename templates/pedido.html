@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REALIZAR PEDIDO</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="../static/style.css" > -->
+    <link rel="icon" href="../static/images/pizza-italiana.png" type="image/png">
+    <link rel="stylesheet" href="../static/pedido.css">
+</head>
+<body>
+   <header id="comienzo">
+    <a href="#" class="logo">
+        <img src="../static/images/icono.png" alt="imagen de pizza">
+        <h2 class="name">Realizar Pedido</h2>
+    </a>
+    <nav>
+        <a href="/menu">Menú</a>
+        <a href="/">Principal</a>
+    </nav>
+   </header>
+   <section>
+    <form action="/cargarPedidos" method="POST">
+        <h2>Haga su pedido!</h2>
+        <div class="form_input">
+            <label for="dni">DNI</label>
+            <input id="dni" type="text" placeholder="DNI" name="dni">
+        </div>
+        <div class="form_input">
+            <label for="nombre">NOMBRE Y APELLIDO</label>
+            <input id="nombre" type="text" placeholder="Nombre completo" name="nombre">
+        </div>
+        <div class="form_input">
+            <label for="direccion">DIRECCION</label>
+            <input id="direccion" type="text" placeholder="DIRECCION" name="direccion">
+        </div>
+        <div class="form_input">
+            <label for="celular">CELULAR</label>
+            <input id="celular" type="text" placeholder="CELULAR" name="celular">
+        </div>
+        <div class="form_input">
+            <label for="tipoDePizza">TIPO DE PIZZA</label>
+            <input id="tipoDePizza" type="text" placeholder="TIPO DE PIZZA" name="tipoDePizza">
+        </div>
+        <div class="button-container">
+            <button class="type-reset" type="reset">RESET</button>
+            <button class="type-send"  type="submit">SEND</button>
+        </div>
+    </form>
+   </section>
+   <footer>
+    <section>
+        <a class="end-pag" href="#comienzo">Ir al comienzo</a>
+        <a class="end-pag" href="/presentacion">Developers</a>
+    </section>
+    <p>Copyright 2024</p>
+</footer>
+</body>
+</html>

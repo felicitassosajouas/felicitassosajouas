@@ -1,0 +1,128 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom,#333,#000);
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(3, 2, 2);
+    padding-right: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(5, 155, 85);
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 45px;
+    padding-right: 10px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+nav a:hover{
+    color: rgb(245, 245, 245)
+}
+
+/* aca empieza la tabla */
+table.table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+table.table thead {
+    background-color: #f4f4f4;
+}
+
+table.table th, 
+table.table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table.table th {
+    background-color: #f8f8f8;
+    color: rgb(3, 2, 2);
+}
+
+table.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button.button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.button:hover {
+    background-color: #218838;
+}
+
+/* Fin del estilo de la tabla */
+
+footer {
+    background-color: rgb(5, 155, 85);
+    padding: 20px;
+    color: rgb(3, 2, 2);
+    font-weight: 600;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer section {
+    float: right;
+}
+
+.end-pag:hover {
+    color: rgb(245, 245, 245);
+}
+
+.footer-a{
+    background-color:  rgb(5, 155, 85);
+    padding: 20px;
+    color: rgb(3, 2, 2);
+    font-weight: 600;
+}
+
+.footer-a p{
+    margin: 0;
+}
+
+.footer-a section{
+    float: right;
+}
+
+.end-pag:hover{
+    color: rgb(245, 245, 245)
+} 
